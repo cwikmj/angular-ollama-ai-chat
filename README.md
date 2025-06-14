@@ -14,7 +14,6 @@ It's ideal for embedding a helpful AI assistant into a larger system or as a sta
 - **Message formatting** - Supports markdown-like syntax for code blocks, inline code, and bold text, rendering them safely as HTML.
 - **Auto-scroll** - The chat view scrolls automatically to show the latest messages.
 - **Loading indicator** - Shows a spinner animation while the AI is generating a response.
-- **Initial prompt** - On app load, it automatically sends a sample prompt ("tell me a joke about coders") to demonstrate functionality and check LLM connection.
 
 ![1lC3Wc9ncX](https://github.com/user-attachments/assets/d0fed1a8-06a4-48e1-81d3-e4b334cc2e3b)
 
@@ -86,6 +85,8 @@ ollama run gemma3:12b --api-port=11434
 ##  Potential Enhancements
 
 - Add user authentication for persistent history.
+- Allow multiple chats.
 - Allow model switching via UI.
+- Allow copying messages containing code snippets.
 - Enhance UI with message timestamps or avatars.
 - Support rich input (e.g., voice input, file attachments).
