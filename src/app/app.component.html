@@ -1,0 +1,28 @@
+<div class="app-wrapper">
+  <div class="header medium-bg">
+    <h1>Ollama AI Chat</h1>
+  </div>
+
+  <div #scrollContainer class="chat-container">
+    <div *ngFor="let message of messages">
+      <div class="message-content" [ngClass]="{'user': message.role === 'user', 'ai': message.role === 'assistant'}"
+        [innerHTML]="formatMessage(message.content)">
+      </div>
+    </div>
+    <div *ngIf="loading" class="spinner dots-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <input type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" placeholder="your prompt goes here..." class="form-control" />
+    <button *ngIf="!isStreaming" (click)="sendMessage()" [disabled]="!newMessage.trim()" class="btn btn-primary">
+      SEND
+    </button>
+    <button *ngIf="isStreaming" (click)="stopGeneration()" class="btn btn-stop">
+      STOP
+    </button>
+  </div>
+</div>
