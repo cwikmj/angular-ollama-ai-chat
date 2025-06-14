@@ -4,6 +4,8 @@ The Ollama AI Chat project is a web-based chat application built with Angular th
 
 It's ideal for embedding a helpful AI assistant into a larger system or as a standalone knowledge assistant.
 
+![152337](https://github.com/user-attachments/assets/481c2f71-2005-48f9-8bd8-199953eb5845)
+
 ## Features
 
 - **Real-time AI chat interaction** - Users can send messages to the AI assistant and receive streamed responses.
@@ -14,6 +16,7 @@ It's ideal for embedding a helpful AI assistant into a larger system or as a sta
 - **Loading indicator** - Shows a spinner animation while the AI is generating a response.
 - **Initial prompt** - On app load, it automatically sends a sample prompt ("tell me a joke about coders") to demonstrate functionality and check LLM connection.
 
+![1lC3Wc9ncX](https://github.com/user-attachments/assets/d0fed1a8-06a4-48e1-81d3-e4b334cc2e3b)
 
 ## Code Structure & Logic
 
@@ -42,6 +45,8 @@ It's ideal for embedding a helpful AI assistant into a larger system or as a sta
 4. The component subscribes to these partial responses, updating the latest assistant message in the UI.
 5. When streaming completes or is stopped, UI updates accordingly.
 
+![hAOrMnC1HI](https://github.com/user-attachments/assets/7b22ed26-137e-455f-b1b6-3a7109ed4bfc)
+
 ## How to run locally
 
 ##### Prerequisites
@@ -50,6 +55,8 @@ It's ideal for embedding a helpful AI assistant into a larger system or as a sta
 - Angular CLI (```npm install -g @angular/cli```)
 - Backend Ollama server running on ```localhost:11434```
 - ```npm install``` dependencies
+
+![152446](https://github.com/user-attachments/assets/7adb1edc-2718-4e88-9f4f-22af470c2be0)
 
 ##### Steps to Run
 ```
